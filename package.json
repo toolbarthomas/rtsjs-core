@@ -1,0 +1,32 @@
+{
+  "name": "rtsjs-core",
+  "version": "0.1.0",
+  "description": "Compile javascript based rts game (proof of concept)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toolbarthomas/rtsjs-core.git"
+  },
+  "keywords": [
+    "rts",
+    "js",
+    "node",
+    "game"
+  ],
+  "author": "Thomas van der Velde <contact@toolbarthomas.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/toolbarthomas/rtsjs-core/issues"
+  },
+  "homepage": "https://github.com/toolbarthomas/rtsjs-core#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "eslint-config-airbnb-standard": "^2.1.6"
+  }
+}
