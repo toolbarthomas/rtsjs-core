@@ -1,2 +1,2 @@
-# rtsjs-core
-Real Time Strategy javascript framework proof of concept.
+# strategyjs
+Proof of concept real time strategy for the browsers.
