@@ -32,6 +32,7 @@
     "domready": "^1.0.8",
     "eslint-config-airbnb-standard": "^2.1.6",
     "postcss": "^7.0.6",
+    "postcss-custom-properties": "^8.0.9",
     "postcss-nested": "^4.1.0"
   }
 }
