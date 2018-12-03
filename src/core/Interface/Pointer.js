@@ -35,7 +35,7 @@ class Pointer {
   }
 
   /**
-   * Binds
+   * Bind all event.
    */
   bind() {
     if (!this.ref) {
@@ -43,9 +43,19 @@ class Pointer {
     }
 
     window.addEventListener('mousemove', (event) => {
-      this.clientX = event.clientX;
-      this.clientY = event.clientY;
+      this.setPointerPosition(event);
     });
+
+    window.addEventListener('click', (event) => {
+      this.setPointerPosition(event);
+
+      console.log(this);
+    });
+  }
+
+  setPointerPosition(e) {
+    this.clientX = e.clientX || 0;
+    this.clientY = e.clientY || 0;
   }
 }
 
