@@ -1,8 +1,9 @@
 import domready from 'domready';
 
-import World from './core/World';
+import Pointer from './core/Interface/Pointer';
 
 domready(() => {
-  console.log('aa');
-  World.render();
+  window.Game = {
+    Pointer: Pointer.mount()
+  }
 });
