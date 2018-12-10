@@ -123,17 +123,7 @@ class Pointer {
       return;
     }
 
-    const style = {}
-
-    if (!Number.isNaN(Number.parseFloat(this.x))) {
-      style.left = `${(this.x > 0 ? this.x : 0)}px`;
-    }
-
-    if (!Number.isNaN(Number.parseFloat(this.y))) {
-      style.top = `${(this.y > 0 ? this.y : 0)}px`;
-    }
-
-    Object.assign(this.ref.style, style);
+    this.ref.style.transform = `translate(${this.x}px, ${this.y}px)`;
   }
 
   /**
